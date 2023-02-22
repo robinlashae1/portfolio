@@ -1,5 +1,5 @@
 {
-  "name":"new_portfolio",
+  "name": "new_portfolio",
   "description": "Build scripts for Heroku",
   "engines": {
     "node": "16.x"
@@ -9,5 +9,8 @@
     "clean": "rm -rf public",
     "deploy": "cp -a client/build/. public/",
     "heroku-postbuild": "npm run clean && npm run build && npm run deploy"
+  },
+  "dependencies": {
+    "react-router-dom": "^6.8.1"
   }
 }
